@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Котокафе на Набережной</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="top"></div>
+    <div class="page">
+      <header>
+        <video
+          class="hero-video"
+          src="video/19787249-hd_1920_1080_25fps.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>Котокафе на Набережной</h1>
+          <p>Территория кофе, котиков и релакса.</p>
+          <a class="hero-button" href="#menu">Посмотреть меню</a>
+        </div>
+      </header>
+      <nav class="nav-site">
+        <input class="menu-check" id="menu-check" type="checkbox" />
+        <label class="burger" for="menu-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="nav-menu">
+          <a href="#menu">Меню</a>
+          <a href="#effects">Атмосфера</a>
+          <a href="#form">Оставить заявку</a>
+          <a href="#contacts">Контакты</a>
+          <label class="theme-control">
+            <input class="theme-check" type="checkbox" />
+            Тёмная тема
+          </label>
+        </div>
+      </nav>
+      <main>
+        <section class="menu" id="menu">
+          <p class="menu-text">
+            Котокафе на Набережной — место, где можно замедлиться, пообщаться с
+            ласковыми пушистиками, научиться новому, поиграть в настолки и найти
+            себе верного друга. Заходите за порцией безусловной любви и
+            вдохновения!
+          </p>
+          <h2>Категории меню</h2>
+          <div class="cards">
+            <article class="card">
+              <div class="card-top">
+                <div class="number">1</div>
+                <h3>Завтраки</h3>
+              </div>
+              <p>
+                Лёгкие блюда для начала дня: каши, сырники, омлеты и свежие
+                напитки.
+              </p>
+              <div class="tag">Утро</div>
+            </article>
+            <article class="card">
+              <div class="card-top">
+                <div class="number">2</div>
+                <h3>Кофе и напитки</h3>
+              </div>
+              <p>
+                Горячий кофе, чай, какао и сезонные напитки для уютной паузы.
+              </p>
+              <div class="tag">Кофе-пауза</div>
+            </article>
+            <article class="card">
+              <div class="card-top">
+                <div class="number">3</div>
+                <h3>Обеды</h3>
+              </div>
+              <p>Сытные блюда для полноценного перерыва в середине дня.</p>
+              <div class="tag">Перерыв</div>
+            </article>
+            <article class="card">
+              <div class="card-top">
+                <div class="number">4</div>
+                <h3>Десерты</h3>
+              </div>
+              <p>
+                Выпечка, пирожные и сладкие позиции для приятного завершения
+                обеда.
+              </p>
+              <div class="tag">Сладкое</div>
+            </article>
+            <article class="card">
+              <div class="card-top">
+                <div class="number">5</div>
+                <h3>Здоровое меню</h3>
+              </div>
+              <p>
+                Салаты, лёгкие блюда и полезные сочетания для тех, кто следит за
+                режимом.
+              </p>
+              <div class="tag">Баланс</div>
+            </article>
+            <article class="card">
+              <div class="card-top">
+                <div class="number">6</div>
+                <h3>С собой</h3>
+              </div>
+              <p>
+                Напитки и блюда в удобном формате, которые можно взять с собой.
+              </p>
+              <div class="tag">Take away</div>
+            </article>
+          </div>
+        </section>
+        <section class="effects" id="effects">
+          <h2>Атмосфера Котокафе</h2>
+          <div class="effect-gallery">
+            <div class="effect-card effect-card-1">
+              <span>01</span>
+              <h3>Аромат кофе</h3>
+              <p>
+                Свежий кофе, тёплые напитки и десерты помогают восполнить силы в
+                течение дня.
+              </p>
+            </div>
+            <div class="effect-card effect-card-2">
+              <span>02</span>
+              <h3>Веселье и смех</h3>
+              <p>
+                Большая коллекция настольных игр для увлекательного
+                времяпровождения с друзьями.
+              </p>
+            </div>
+            <div class="effect-card effect-card-3">
+              <span>03</span>
+              <h3>Уютная пауза</h3>
+              <p>
+                Пушистая компания помогает расслабиться и восстановится после
+                тяжёлого дня.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="form" id="form">
+          <h2>Оставить заявку:</h2>
+          <form>
+            <label for="name">ФИО</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Введите ФИО"
+              required
+            />
+            <label for="phone">Номер телефона</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+            <label for="choose">Выберите тему:</label>
+            <select id="choose" name="choose">
+              <option>-- не выбрано --</option>
+              <option>Забронировать столик</option>
+              <option>Забронировать зал</option>
+              <option>Кулинарный мастер-класс</option>
+              <option>Другое (укажите ниже)</option>
+            </select>
+            <label for="comment">Комментарий</label>
+            <textarea
+              id="comment"
+              name="comment"
+              placeholder="Укажите удобное время"
+            ></textarea>
+            <div class="agree">
+              <input type="checkbox" id="agree" name="agree" required />
+              <label for="agree">Согласен на обработку заявки</label>
+            </div>
+            <button type="submit">Отправить заявку</button>
+          </form>
+        </section>
+      </main>
+      <aside id="info">
+        <h4>Информация о Котокафе</h4>
+        <ul>
+          <li>
+            Все наши котики стерилизованы, привиты и обработаны от паразитов. А
+            также регулярно посещают груминг салон и проходят ежегодный
+            медосмотр.
+          </li>
+          <li>
+            Котики доступны для укотовления, по сопутствующим вопросам
+            обращайтесь к директору.
+          </li>
+          <li>Возможно бронирование столиков и всего зала.</li>
+          <li>
+            Мы также проводим кулинарные мастер-классы в отдельном специально
+            оборудованном зале.
+          </li>
+        </ul>
+        <video
+          class="effect-video"
+          src="video/mixkit-croissant-with-a-cup-of-coffee-29306-hd-ready.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+        <a href="#form" class="cta-button">Забронировать столик</a>
+        <h4>Популярные позиции</h4>
+        <ul>
+          <li>Капучино и сырники — частый выбор для завтрака.</li>
+          <li>"Комплексный обед" подходит для полноценного перерыва.</li>
+          <li>Круассаны и бабл-ти удобно взять с собой.</li>
+        </ul>
+        <div class="aside-section reviews-section">
+          <h4 class="aside-section-title">Отзывы клиентов</h4>
+          <div class="reviews-list">
+            <div class="review-card">
+              <div class="review-header">
+                <span class="review-author">Андрей Ш.</span>
+                <span class="review-rating">★★★★★</span>
+              </div>
+              <p class="review-text">
+                Всегда захожу сюда за пирожками. Сотрудники тщательно следят за
+                чистотой и порядком. Можно спокойно посидеть с ноутбуком, котики
+                просто чудо.
+              </p>
+            </div>
+            <div class="review-card">
+              <div class="review-header">
+                <span class="review-author">Елизавета С.</span>
+                <span class="review-rating">★★★★★</span>
+              </div>
+              <p class="review-text">
+                Отмечала здесь день рождения, всё прошло супер! Очень
+                понравилась обстановка, официанты доброжелательны. Есть редкие
+                настолки, в том числе и моя любимая "Мор. Утопия". Мама забрала
+                себе пятнистого кота Тимошу.
+              </p>
+            </div>
+            <div class="review-card">
+              <div class="review-header">
+                <span class="review-author">Полина В.</span>
+                <span class="review-rating">★★★★★</span>
+              </div>
+              <p class="review-text">
+                Бываю тут по выходным с подругами. Всё очень нравится, чисто и
+                вкусно.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="contacts" class="aside-contacts">
+          <div class="contact-item">
+            <span class="contact-label">Режим работы:</span>
+            <span class="contact-value">Ежедневно: 07:00 – 23:00</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Телефон:</span>
+            <a href="tel:+78007773434" class="contact-value"
+              >+7 (800) 777-34-34</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Эл. почта:</span>
+            <a href="email:catcafe@example.ru" class="contact-value"
+              >catcafe@example.ru</a
+            >
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Адрес:</span>
+            <span class="contact-value">Набережная ул., д. 11</span>
+          </div>
+        </div>
+      </aside>
+      <footer>Котокафе на Набережной · Макет страницы · 2026</footer>
+    </div>
+    <a href="#top" class="back-to-top" aria-label="Наверх">↑</a>
+  </body>
+</html>
