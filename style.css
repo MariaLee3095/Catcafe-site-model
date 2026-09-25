@@ -64,7 +64,7 @@ body {
 header {
   grid-area: header;
   position: relative;
-  min-height: 360px;
+  min-height: 400px;
   padding: 40px;
   overflow: hidden;
   display: flex;
@@ -94,25 +94,25 @@ header {
   position: relative;
   z-index: 2;
   max-width: 660px;
+  margin-top: -50px;
 }
 header h1 {
   color: #fffaf3;
   margin: 0;
-  font-size: 48px;
+  font-size: 42px;
   font-variant: normal;
   font-family: "Zeequada", Arial, Helvetica, sans-serif;
-  line-height: 1.05;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   text-shadow: 4px 0px 18px rgba(139, 78, 47, 0.9);
 }
 header p {
   color: white;
   font-size: 18px;
-  line-height: 1.4;
+   margin: 8px 0 0 0;
 }
 .hero-button {
   display: inline-block;
-  margin-top: 22px;
+  margin-top: 20px;
   padding: 12px 18px;
   background-color: #f7d28f;
   color: #8f4b2d;
@@ -131,9 +131,15 @@ header p {
 }
 .nav-site {
   grid-area: nav;
-  gap: 20px;
-  background-color: #fff3df;
-  padding: 20px 0px 20px 30px;
+  position: absolute;
+  gap: 50px;
+  background-color: #fff3df45;
+  padding: 20px 30px 20px 30px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
 }
 .menu-check {
   display: none;
@@ -150,7 +156,7 @@ header p {
   display: block;
   text-decoration: none;
   font-weight: bold;
-  color: #8b4e2f;
+  color: #5b331f;
   transition: color 0.5s;
 }
 .nav-menu a:hover {
@@ -558,7 +564,9 @@ body:has(.theme-check:checked) .cta-button {
   background-color: rgb(216, 102, 49);
   color: #d5d9e4;
 }
-body:has(.theme-check:checked) .nav-site,
+body:has(.theme-check:checked) .nav-site {
+  background-color: #1c1d2a45;
+}
 body:has(.theme-check:checked) footer {
   background-color: #1c1d2a;
   color: #d5d9e4;
@@ -706,7 +714,7 @@ body:has(.theme-check:checked) h4 {
   }
   .burger span {
     height: 2px;
-    background-color: #8f4b2d;
+    background-color: #5b331f;
   }
   body:has(.theme-check:checked) .burger span {
     background-color: #a1a3bc;
