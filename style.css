@@ -108,14 +108,14 @@ header h1 {
 header p {
   color: white;
   font-size: 18px;
-   margin: 8px 0 0 0;
+  margin: 8px 0 0 0;
 }
 .hero-button {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 18px;
   background-color: #f7d28f;
-  color: #8f4b2d;
+  color: #4f1d24;
   text-decoration: none;
   font-weight: bold;
   border-radius: 25px;
@@ -156,11 +156,11 @@ header p {
   display: block;
   text-decoration: none;
   font-weight: bold;
-  color: #5b331f;
+  color: #4f1d24;
   transition: color 0.5s;
 }
 .nav-menu a:hover {
-  color: #d98c3f;
+  color: #f7d28f;
   text-decoration: none;
 }
 main {
@@ -581,7 +581,7 @@ body:has(.theme-check:checked) .nav-menu a:hover {
 }
 body:has(.theme-check:checked) .card,
 body:has(.theme-check:checked) #form {
-  background-image: url(img/back_2.webp);
+  background-image: linear-gradient(#35384f90), url(img/back_2.webp);
 }
 body:has(.theme-check:checked) .menu-text,
 body:has(.theme-check:checked) .card p,
