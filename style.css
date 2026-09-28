@@ -612,6 +612,11 @@ body:has(.theme-check:checked) #choose:focus,
 body:has(.theme-check:checked) #comment:focus {
   border-color: #4e48a4;
 }
+body:has(.theme-check:checked) #name::placeholder,
+body:has(.theme-check:checked) #phone::placeholder,
+body:has(.theme-check:checked) #comment::placeholder {
+  color: #72727d;
+}
 body:has(.theme-check:checked) .aside-section,
 body:has(.theme-check:checked) .aside-contacts {
   border-top: 1px solid #7981a2;
